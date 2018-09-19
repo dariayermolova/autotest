@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state relative-caret-position="75">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -49,8 +49,8 @@
       <file leaf-file-name="WidgetPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/WidgetPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+            <state relative-caret-position="280">
+              <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2010">
-              <caret line="140" column="28" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/SignupPage.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/suite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/WidgetPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/LoginPage.java" />
       </list>
     </option>
   </component>
@@ -241,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/boss/IdeaProjects/selenide/testng.xml">
+  <component name="RunManager" selected="TestNG.LoginPage">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -261,7 +261,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="LoginPage.t3_LoginViaYahoo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenide" />
       <extension name="coverage">
         <pattern>
@@ -274,9 +274,9 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginPage" />
-      <option name="METHOD_NAME" value="t3_LoginViaYahoo" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -423,19 +423,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.LoginPage.t3_LoginViaYahoo" />
       <item itemvalue="TestNG.WidgetPage.t3_LoginAsFacebook" />
       <item itemvalue="TestNG.WidgetPage.t4_LoginViaYahoo" />
       <item itemvalue="TestNG.WidgetPage.t5_LoginViaGoogle" />
       <item itemvalue="TestNG./home/boss/IdeaProjects/selenide/testng.xml" />
+      <item itemvalue="TestNG.LoginPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginPage" />
         <item itemvalue="TestNG./home/boss/IdeaProjects/selenide/testng.xml" />
         <item itemvalue="TestNG.WidgetPage.t5_LoginViaGoogle" />
         <item itemvalue="TestNG.WidgetPage.t4_LoginViaYahoo" />
         <item itemvalue="TestNG.WidgetPage.t3_LoginAsFacebook" />
-        <item itemvalue="TestNG.LoginPage.t3_LoginViaYahoo" />
       </list>
     </recent_temporary>
   </component>
@@ -453,24 +453,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WidgetPage_t2SignupFromWidget - 2018.09.11 at 17h 54m 39s.xml">
-      <configuration name="WidgetPage.t2SignupFromWidget" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WidgetPage_t2SignupFromWidget - 2018.09.11 at 17h 57m 15s.xml">
-      <configuration name="WidgetPage.t2SignupFromWidget" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginPage_t3_LoginViaYahoo - 2018.09.11 at 18h 13m 39s.xml">
-      <configuration name="LoginPage.t3_LoginViaYahoo" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WidgetPage_t3_LoginAsFacebook - 2018.09.11 at 18h 34m 23s.xml">
-      <configuration name="WidgetPage.t3_LoginAsFacebook" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WidgetPage_t3_LoginAsFacebook - 2018.09.11 at 19h 26m 06s.xml">
-      <configuration name="WidgetPage.t3_LoginAsFacebook" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="WidgetPage_t3_LoginAsFacebook - 2018.09.11 at 19h 31m 14s.xml">
-      <configuration name="WidgetPage.t3_LoginAsFacebook" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="WidgetPage_t3_LoginAsFacebook - 2018.09.11 at 19h 32m 49s.xml">
       <configuration name="WidgetPage.t3_LoginAsFacebook" configurationId="TestNG" />
     </history-entry>
@@ -482,6 +464,24 @@
     </history-entry>
     <history-entry file="WidgetPage_t5_LoginViaGoogle - 2018.09.11 at 19h 40m 47s.xml">
       <configuration name="WidgetPage.t5_LoginViaGoogle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_boss_IdeaProjects_selenide_testng_xml - 2018.09.19 at 13h 58m 52s.xml">
+      <configuration name="/home/boss/IdeaProjects/selenide/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPage - 2018.09.19 at 16h 00m 05s.xml">
+      <configuration name="LoginPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPage - 2018.09.19 at 16h 01m 47s.xml">
+      <configuration name="LoginPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPage - 2018.09.19 at 16h 03m 17s.xml">
+      <configuration name="LoginPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPage - 2018.09.19 at 16h 14m 01s.xml">
+      <configuration name="LoginPage" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPage - 2018.09.19 at 16h 25m 48s.xml">
+      <configuration name="LoginPage" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -505,11 +505,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.85643566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06270627" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27954546" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17727272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -917,30 +917,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="140" column="28" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/WidgetPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+        <state relative-caret-position="280">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="150">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

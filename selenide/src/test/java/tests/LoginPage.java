@@ -19,6 +19,10 @@ public class LoginPage extends suite {
     private String passTw = "D21UDOW2";
     private String emailG = "daria.yermolova@nure.ua";
     private String passG = "daria2016";
+    private String urlPpac = "http://ppacentral.com";
+    private String urlModtool = "https://modtools.solidopinion.com/";
+    private String urlWidget = "http://my.solidopinion.com/demo/?sitename=prod40118";
+    private String urlProfile = "https://my.solidopinion.com/profile";
 
     @Test
     public void t1_LoginInAdmin() {
@@ -43,7 +47,35 @@ public class LoginPage extends suite {
     }
 
     @Test
-    public void t2_LogoutFromAdmin() {
+    public void t2_CheckPpac() {
+        open(urlPpac);
+        $(By.id("user-login")).shouldNotBe();
+        $(By.className("user-box")).shouldHave(text("Welcome "));
+        $(By.xpath("//div[@class='headline-user-wrap']//a")).shouldHave(text("Profile"));
+    }
+
+    @Test
+    public void t3_CheckModtool() {
+        open(urlModtool);
+        $(By.className("user-name")).shouldBe();
+        $(By.className("logout")).shouldBe();
+        $(By.xpath("//div[@class='commets-filter-inner-left']//button[@class='btn active'][1]")).shouldHave(text("Comments"));
+        $(By.xpath("//div[@class='commets-filter-inner-left']//button[@class='btn active'][2]")).shouldHave(text("Promo comments"));
+        $(By.xpath("//div[@class='commets-filter-inner-left']//button[@class='btn active'][3]")).shouldHave(text("Headlines"));
+    }
+
+    @Test
+    public void t4_CheckWidget() {
+        open(urlWidget);
+        switchTo().frame($(By.xpath("//div[@class='so_comments']//iframe")));
+        $(By.xpath("//span[@id='display_name']")).shouldBe();
+        //$(By.xpath("//span[@class='current-user-points-amount']")).shouldHave(text("ENGT(s)"));
+        $(By.xpath("//span[@data-i18n='com.all_comments']")).shouldHave(text("All Comments"));
+    }
+
+    @Test
+    public void t5_LogoutFromAdmin() {
+        open(urlProfile);
         $(By.xpath("//li[@id='tab-panel-comments-li']//a")).shouldHave(text("Your comments"));
         $(By.className("dropdown-toggle")).shouldBe().click();
         $(By.className("signout")).click();
@@ -54,7 +86,7 @@ public class LoginPage extends suite {
     }
 
     @Test
-    public void t3_LoginViaYahoo() {
+    public void t6_LoginViaYahoo() {
         open(urlLogin);
         $(By.id("yahoo-login")).shouldBe().click();
         switchTo().window(1);
@@ -77,7 +109,7 @@ public class LoginPage extends suite {
     }
 
     @Test
-    public void t4_LoginViaFacebook() {
+    public void t7_LoginViaFacebook() {
         open(urlLogin);
         $(By.id("facebook-login")).shouldBe().click();
         switchTo().window(1);
@@ -95,7 +127,7 @@ public class LoginPage extends suite {
     }
 
   /*  @Test
-    public void t5() {
+    public void t8_LoginViaDisqus() {
         open(urlLogin);
         $(By.id("disqus-login")).shouldBe().click();
         switchTo().window(1);
@@ -112,7 +144,7 @@ public class LoginPage extends suite {
         $(By.id("facebook-login")).shouldHave(text("F"));
     }
   @Test
-    public void t6() {
+    public void t9_LoginViaTwitter() {
       open(urlLogin);
       $(By.id("tw-login")).shouldBe().click();
       switchTo().window(1);
@@ -130,7 +162,7 @@ public class LoginPage extends suite {
   }
 */
   @Test
-    public  void  t7_LoginViaGoogle() {
+    public  void  t9_LoginViaGoogle() {
       Configuration.timeout = 6000;
       open(urlLogin);
       $(By.id("google-login")).shouldBe().click();
