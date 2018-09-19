@@ -1,0 +1,17 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="IMS" verbose="1" >
+    <listeners>
+        <listener class-name="extentreport.TestListner"/>
+
+    </listeners>
+    <test name="Smoke">
+        <classes>
+            <class name="tests.LoginPage"/>
+            <class name="tests.SignupPage"/>
+            <class name="tests.WidgetPage"/>
+        </classes>
+    </test>
+
+</suite>
