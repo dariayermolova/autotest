@@ -1,0 +1,1 @@
+{"uuid":"5aacb1d5-28f5-42be-bd58-646dafc02eb1","name":"my.so.addnewsite","start":1538140745052,"stop":1538140771248,"children":["0c708a7f-7fbc-4803-b0ba-70a8e3018cb7"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538140763933,"stop":1538140763933}]}

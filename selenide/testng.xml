@@ -1,17 +1,27 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="IMS" verbose="1" >
-    <listeners>
-        <listener class-name="extentreport.TestListner"/>
-
-    </listeners>
-    <test name="Smoke">
+<suite name="discussion" verbose="1" >
+    <test name="my.so">
         <classes>
-            <class name="tests.LoginPage"/>
-            <class name="tests.SignupPage"/>
-            <class name="tests.WidgetPage"/>
+            <class name="my.so.profile"/>
+            <class name="my.so.addnewsite"/>
+      <!--     <class name="my.so.general"/>
+            <class name="my.so.revenue"/>
+            <class name="my.so.style"/>
+            <class name="my.so.filters"/>  -->
+            <class name="my.so.moderation"/>
+            <class name="my.so.engtsRules" />
         </classes>
     </test>
-
+<!--
+   <test name="ims">
+        <classes>
+            <class name="ims.LoginPage"/>
+            <class name="ims.SignupPage"/>
+            <class name="ims.WidgetPage"/>
+            <class name="ims.WidgetLoginFacebook"/>
+        </classes>
+    </test>
+-->
 </suite>

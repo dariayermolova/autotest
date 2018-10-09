@@ -1,0 +1,1 @@
+{"uuid":"fa1cb3f4-6f11-443d-b220-3cef1f270782","name":"ims.SignupPage","start":1538142160824,"stop":1538142267961,"children":["ccc7966a-1e5c-435f-b62f-2fc45fda6c0d"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538142214887,"stop":1538142214887}]}

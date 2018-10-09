@@ -1,0 +1,1 @@
+{"uuid":"f7f76a11-c962-4898-9389-3822cf747883","name":"my.so.general","start":1538495081775,"stop":1538495142678,"children":["0b3d6d2a-4bdc-460f-90fc-14eae7a65ad8"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538495123260,"stop":1538495123260}]}
