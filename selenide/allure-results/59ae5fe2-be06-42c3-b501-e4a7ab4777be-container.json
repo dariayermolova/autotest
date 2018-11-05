@@ -1,1 +1,0 @@
-{"uuid":"59ae5fe2-be06-42c3-b501-e4a7ab4777be","name":"my.so.filters","start":1538565188601,"stop":1538565266571,"children":["bc67db1e-02ae-444f-919d-b2dce5588e0a"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538565259165,"stop":1538565259165}]}

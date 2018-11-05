@@ -1,1 +1,0 @@
-{"uuid":"70625b01-c090-40ee-967f-760a79466da0","name":"my.so.revenue","start":1538151443623,"stop":1538151471774,"children":["64a1c58f-fa27-4ac4-ba1e-58e8c191f174"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538151471613,"stop":1538151471613}]}

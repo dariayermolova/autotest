@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-discussion">
+              <span class="suite-name border-failed">discussion</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-discussion">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-discussion">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-discussion">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-discussion">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-discussion">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-discussion">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-discussion">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 4 failed,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-discussion" class="hide-methods failed suite-discussion"> (hide)</a> <!-- hide-methods failed suite-discussion -->
+                      <a href="#" panel-name="suite-discussion" class="show-methods failed suite-discussion"> (show)</a> <!-- show-methods failed suite-discussion -->
+                    </span>
+                    <div class="method-list-content failed suite-discussion">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.moderation" hash-for-method="t2_CheckAddModeration">t2_CheckAddModeration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.profile" hash-for-method="t5_CheckComments">t5_CheckComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.profile" hash-for-method="t6_CheckPromoComments">t6_CheckPromoComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.WidgetPage" hash-for-method="t6_LoginViaFacebook">t6_LoginViaFacebook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-discussion -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-discussion" class="hide-methods passed suite-discussion"> (hide)</a> <!-- hide-methods passed suite-discussion -->
+                      <a href="#" panel-name="suite-discussion" class="show-methods passed suite-discussion"> (show)</a> <!-- show-methods passed suite-discussion -->
+                    </span>
+                    <div class="method-list-content passed suite-discussion">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.addnewsite" hash-for-method="t1_AddNewSite">t1_AddNewSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.general" hash-for-method="t1_ChangeInfo">t1_ChangeInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.revenue" hash-for-method="t1_ChangePH">t1_ChangePH</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.style" hash-for-method="t1_CheckConfigure">t1_CheckConfigure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.moderation" hash-for-method="t1_CheckModeration">t1_CheckModeration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.filters" hash-for-method="t1_CheckRestrictedWords">t1_CheckRestrictedWords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="widget.headline" hash-for-method="t1_LoginAndPost">t1_LoginAndPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t1_LoginInAdmin">t1_LoginInAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.WidgetPage" hash-for-method="t1_LoginViaSo">t1_LoginViaSo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.ranks" hash-for-method="t1_SelectTemplate">t1_SelectTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.engtsRules" hash-for-method="t1_SelectTemplate">t1_SelectTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.SignupPage" hash-for-method="t1_SignupInAdmin">t1_SignupInAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.ranks" hash-for-method="t2_AddRank">t2_AddRank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.revenue" hash-for-method="t2_ChangeDHO">t2_ChangeDHO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.profile" hash-for-method="t2_ChangeInfo">t2_ChangeInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.style" hash-for-method="t2_CheckColors">t2_CheckColors</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.filters" hash-for-method="t2_CheckIpDomainSocial">t2_CheckIpDomainSocial</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t2_CheckPpac">t2_CheckPpac</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.engtsRules" hash-for-method="t2_SendCustomTemplate">t2_SendCustomTemplate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.WidgetPage" hash-for-method="t2_SignupFromWidget">t2_SignupFromWidget</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.ranks" hash-for-method="t3_AddCustomRank">t3_AddCustomRank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.revenue" hash-for-method="t3_ChangePHO">t3_ChangePHO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.style" hash-for-method="t3_CheckAdSpace">t3_CheckAdSpace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.filters" hash-for-method="t3_CheckBlacklist">t3_CheckBlacklist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.profile" hash-for-method="t3_CheckInfo">t3_CheckInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t3_CheckModtool">t3_CheckModtool</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.revenue" hash-for-method="t4_ChangePC">t4_ChangePC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.style" hash-for-method="t4_CheckCommunityTab">t4_CheckCommunityTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t4_CheckWidget">t4_CheckWidget</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.profile" hash-for-method="t4_FindSite">t4_FindSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.WidgetPage" hash-for-method="t4_LoginViaYahoo">t4_LoginViaYahoo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="my.so.style" hash-for-method="t5_CheckCommunityWidget">t5_CheckCommunityWidget</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.WidgetPage" hash-for-method="t5_LoginViaGoogle">t5_LoginViaGoogle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t5_LogoutFromAdmin">t5_LogoutFromAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t6_LoginViaYahoo">t6_LoginViaYahoo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t7_LoginViaFacebook">t7_LoginViaFacebook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-discussion" title="ims.LoginPage" hash-for-method="t9_LoginViaGoogle">t9_LoginViaGoogle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-discussion -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-discussion" class="panel discussion">
+          <div class="suite-discussion-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">my.so.profile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t5_CheckComments">
+                  </a> <!-- t5_CheckComments -->
+                  <span class="method-name">t5_CheckComments</span>
+                  <div class="stack-trace">Element not found {By.className: goBack}
+Expected: visible
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902568972.0.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902568972.0.html
+Timeout: 8 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;goBack&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:94)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at my.so.profile.t5_CheckComments(profile.java:74)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;class name&quot;,&quot;selector&quot;:&quot;goBack&quot;}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DY&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.13.0-45-generic&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=class name, value=goBack}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:68)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check user's comments)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t6_CheckPromoComments">
+                  </a> <!-- t6_CheckPromoComments -->
+                  <span class="method-name">t6_CheckPromoComments</span>
+                  <div class="stack-trace">Element not found {By.id: site-search}
+Expected: visible
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902578493.1.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902578493.1.html
+Timeout: 8 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;site-search&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:94)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:32)
+	at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:15)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy13.setValue(Unknown Source)
+	at my.so.profile.t6_CheckPromoComments(profile.java:80)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;site-search&quot;}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DY&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.13.0-45-generic&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=id, value=site-search}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:68)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+	... 37 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check user's promo comments)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-failed -->
+          <div class="suite-discussion-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ims.WidgetPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t6_LoginViaFacebook">
+                  </a> <!-- t6_LoginViaFacebook -->
+                  <span class="method-name">t6_LoginViaFacebook</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DY&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.13.0-45-generic&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at io.qameta.allure.selenide.AllureSelenide.getScreenshotBytes(AllureSelenide.java:76)
+	at io.qameta.allure.selenide.AllureSelenide.lambda$onEvent$2(AllureSelenide.java:58)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at io.qameta.allure.selenide.AllureSelenide.onEvent(AllureSelenide.java:48)
+	at com.codeborne.selenide.logevents.SelenideLogger.commitStep(SelenideLogger.java:64)
+	at com.codeborne.selenide.logevents.SelenideLogger.commitStep(SelenideLogger.java:56)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:71)
+	at com.sun.proxy.$Proxy13.shouldHave(Unknown Source)
+	at ims.WidgetPage.t6_LoginViaFacebook(WidgetPage.java:176)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login to widget via facebook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-failed -->
+          <div class="suite-discussion-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">my.so.moderation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_CheckAddModeration">
+                  </a> <!-- t2_CheckAddModeration -->
+                  <span class="method-name">t2_CheckAddModeration</span>
+                  <div class="stack-trace">Element should be visible {By.id: addModerator}
+Element: &apos;&lt;div aria-hidden=&quot;false&quot; aria-labelledby=&quot;addModeratorLabel&quot; class=&quot;modal hide fade allModalStyle modal-add-moderator in&quot; id=&quot;addModerator&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot;&gt;×
+Add a moderator
+Email
+May change site settings
+Send invite Cancel&lt;/div&gt;&apos;
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902674061.2.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902674061.2.html
+Timeout: 8 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+	at com.codeborne.selenide.commands.Should.should(Should.java:35)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy13.shouldBe(Unknown Source)
+	at my.so.moderation.t2_CheckAddModeration(moderation.java:50)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check add moderator)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-failed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.engtsRules</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_SelectTemplate">
+                  </a> <!-- t1_SelectTemplate -->
+                  <span class="method-name">t1_SelectTemplate</span>
+                  <em>
+(Select template)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_SendCustomTemplate">
+                  </a> <!-- t2_SendCustomTemplate -->
+                  <span class="method-name">t2_SendCustomTemplate</span>
+                  <em>
+(Send custom template)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.ranks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_SelectTemplate">
+                  </a> <!-- t1_SelectTemplate -->
+                  <span class="method-name">t1_SelectTemplate</span>
+                  <em>
+(Select template)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_AddRank">
+                  </a> <!-- t2_AddRank -->
+                  <span class="method-name">t2_AddRank</span>
+                  <em>
+(Add rank)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_AddCustomRank">
+                  </a> <!-- t3_AddCustomRank -->
+                  <span class="method-name">t3_AddCustomRank</span>
+                  <em>
+(Add custom rank)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.revenue</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_ChangePH">
+                  </a> <!-- t1_ChangePH -->
+                  <span class="method-name">t1_ChangePH</span>
+                  <em>
+(Change Promoted Headline)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_ChangeDHO">
+                  </a> <!-- t2_ChangeDHO -->
+                  <span class="method-name">t2_ChangeDHO</span>
+                  <em>
+(Change Default Headline Options)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_ChangePHO">
+                  </a> <!-- t3_ChangePHO -->
+                  <span class="method-name">t3_ChangePHO</span>
+                  <em>
+(Change Promoted Headlines Options)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_ChangePC">
+                  </a> <!-- t4_ChangePC -->
+                  <span class="method-name">t4_ChangePC</span>
+                  <em>
+(Change Promoted Comments)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.general</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_ChangeInfo">
+                  </a> <!-- t1_ChangeInfo -->
+                  <span class="method-name">t1_ChangeInfo</span>
+                  <em>
+(Change general)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ims.SignupPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_SignupInAdmin">
+                  </a> <!-- t1_SignupInAdmin -->
+                  <span class="method-name">t1_SignupInAdmin</span>
+                  <em>
+(Signup to my.so)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">widget.headline</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_LoginAndPost">
+                  </a> <!-- t1_LoginAndPost -->
+                  <span class="method-name">t1_LoginAndPost</span>
+                  <em>
+(Login to headline and post headline)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.filters</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_CheckRestrictedWords">
+                  </a> <!-- t1_CheckRestrictedWords -->
+                  <span class="method-name">t1_CheckRestrictedWords</span>
+                  <em>
+(Check Restricted Words)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_CheckIpDomainSocial">
+                  </a> <!-- t2_CheckIpDomainSocial -->
+                  <span class="method-name">t2_CheckIpDomainSocial</span>
+                  <em>
+(Check ip, domain, social)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_CheckBlacklist">
+                  </a> <!-- t3_CheckBlacklist -->
+                  <span class="method-name">t3_CheckBlacklist</span>
+                  <em>
+(Check blacklist)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.profile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_ChangeInfo">
+                  </a> <!-- t2_ChangeInfo -->
+                  <span class="method-name">t2_ChangeInfo</span>
+                  <em>
+(Change user information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_CheckInfo">
+                  </a> <!-- t3_CheckInfo -->
+                  <span class="method-name">t3_CheckInfo</span>
+                  <em>
+(Check the changed information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_FindSite">
+                  </a> <!-- t4_FindSite -->
+                  <span class="method-name">t4_FindSite</span>
+                  <em>
+(Find any site with user activity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ims.WidgetPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_LoginViaSo">
+                  </a> <!-- t1_LoginViaSo -->
+                  <span class="method-name">t1_LoginViaSo</span>
+                  <em>
+(Login to comment widget via so)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_SignupFromWidget">
+                  </a> <!-- t2_SignupFromWidget -->
+                  <span class="method-name">t2_SignupFromWidget</span>
+                  <em>
+(Quick signup in the widget)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_LoginViaYahoo">
+                  </a> <!-- t4_LoginViaYahoo -->
+                  <span class="method-name">t4_LoginViaYahoo</span>
+                  <em>
+(Login to widget via yahoo)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t5_LoginViaGoogle">
+                  </a> <!-- t5_LoginViaGoogle -->
+                  <span class="method-name">t5_LoginViaGoogle</span>
+                  <em>
+(Login to widget via google)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ims.LoginPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_LoginInAdmin">
+                  </a> <!-- t1_LoginInAdmin -->
+                  <span class="method-name">t1_LoginInAdmin</span>
+                  <em>
+(Login to my.so)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_CheckPpac">
+                  </a> <!-- t2_CheckPpac -->
+                  <span class="method-name">t2_CheckPpac</span>
+                  <em>
+(Check multilogin to ppac)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_CheckModtool">
+                  </a> <!-- t3_CheckModtool -->
+                  <span class="method-name">t3_CheckModtool</span>
+                  <em>
+(Check multilogin to modtool)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_CheckWidget">
+                  </a> <!-- t4_CheckWidget -->
+                  <span class="method-name">t4_CheckWidget</span>
+                  <em>
+(Check multilogin to widget)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t5_LogoutFromAdmin">
+                  </a> <!-- t5_LogoutFromAdmin -->
+                  <span class="method-name">t5_LogoutFromAdmin</span>
+                  <em>
+(Logout from my.so)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t6_LoginViaYahoo">
+                  </a> <!-- t6_LoginViaYahoo -->
+                  <span class="method-name">t6_LoginViaYahoo</span>
+                  <em>
+(Login to my.so via yahoo)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t7_LoginViaFacebook">
+                  </a> <!-- t7_LoginViaFacebook -->
+                  <span class="method-name">t7_LoginViaFacebook</span>
+                  <em>
+(Login to my.so via facebook)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t9_LoginViaGoogle">
+                  </a> <!-- t9_LoginViaGoogle -->
+                  <span class="method-name">t9_LoginViaGoogle</span>
+                  <em>
+(Login to my.so via google)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.style</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_CheckConfigure">
+                  </a> <!-- t1_CheckConfigure -->
+                  <span class="method-name">t1_CheckConfigure</span>
+                  <em>
+(Check configure)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_CheckColors">
+                  </a> <!-- t2_CheckColors -->
+                  <span class="method-name">t2_CheckColors</span>
+                  <em>
+(Check colors)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_CheckAdSpace">
+                  </a> <!-- t3_CheckAdSpace -->
+                  <span class="method-name">t3_CheckAdSpace</span>
+                  <em>
+(Check Ad space)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_CheckCommunityTab">
+                  </a> <!-- t4_CheckCommunityTab -->
+                  <span class="method-name">t4_CheckCommunityTab</span>
+                  <em>
+(Check Community tab)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t5_CheckCommunityWidget">
+                  </a> <!-- t5_CheckCommunityWidget -->
+                  <span class="method-name">t5_CheckCommunityWidget</span>
+                  <em>
+(Check Community widget)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.addnewsite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_AddNewSite">
+                  </a> <!-- t1_AddNewSite -->
+                  <span class="method-name">t1_AddNewSite</span>
+                  <em>
+(Add new site)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+          <div class="suite-discussion-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">my.so.moderation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_CheckModeration">
+                  </a> <!-- t1_CheckModeration -->
+                  <span class="method-name">t1_CheckModeration</span>
+                  <em>
+(Check Moderation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-discussion-class-passed -->
+        </div> <!-- panel discussion -->
+        <div panel-name="test-xml-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/boss/IdeaProjects/my_so/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;discussion&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;my.so&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;my.so.profile&quot;/&gt;
+      &lt;class name=&quot;my.so.addnewsite&quot;/&gt;
+      &lt;class name=&quot;my.so.general&quot;/&gt;
+      &lt;class name=&quot;my.so.revenue&quot;/&gt;
+      &lt;class name=&quot;my.so.style&quot;/&gt;
+      &lt;class name=&quot;my.so.filters&quot;/&gt;
+      &lt;class name=&quot;my.so.moderation&quot;/&gt;
+      &lt;class name=&quot;my.so.engtsRules&quot;/&gt;
+      &lt;class name=&quot;my.so.ranks&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- my.so --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;ims&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ims.LoginPage&quot;/&gt;
+      &lt;class name=&quot;ims.SignupPage&quot;/&gt;
+      &lt;class name=&quot;ims.WidgetPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ims --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;widget&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;widget.headline&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- widget --&gt;
+&lt;/suite&gt; &lt;!-- discussion --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for discussion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">my.so (9 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ims (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">widget (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for discussion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for discussion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_discussion');
+function tableData_discussion() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 't1_LoginAndPost')
+data.setCell(0, 2, 'widget.headline')
+data.setCell(0, 3, 20705);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 't4_LoginViaYahoo')
+data.setCell(1, 2, 'ims.WidgetPage')
+data.setCell(1, 3, 15128);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 't2_CheckPpac')
+data.setCell(2, 2, 'ims.LoginPage')
+data.setCell(2, 3, 14400);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 't7_LoginViaFacebook')
+data.setCell(3, 2, 'ims.LoginPage')
+data.setCell(3, 3, 14118);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 't6_LoginViaYahoo')
+data.setCell(4, 2, 'ims.LoginPage')
+data.setCell(4, 3, 13146);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 't5_CheckComments')
+data.setCell(5, 2, 'my.so.profile')
+data.setCell(5, 3, 12830);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 't6_LoginViaFacebook')
+data.setCell(6, 2, 'ims.WidgetPage')
+data.setCell(6, 3, 12819);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 't2_CheckAddModeration')
+data.setCell(7, 2, 'my.so.moderation')
+data.setCell(7, 3, 12759);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 't5_LoginViaGoogle')
+data.setCell(8, 2, 'ims.WidgetPage')
+data.setCell(8, 3, 11792);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 't9_LoginViaGoogle')
+data.setCell(9, 2, 'ims.LoginPage')
+data.setCell(9, 3, 10898);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 't6_CheckPromoComments')
+data.setCell(10, 2, 'my.so.profile')
+data.setCell(10, 3, 9007);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 't1_SignupInAdmin')
+data.setCell(11, 2, 'ims.SignupPage')
+data.setCell(11, 3, 8192);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 't1_LoginViaSo')
+data.setCell(12, 2, 'ims.WidgetPage')
+data.setCell(12, 3, 7744);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 't1_LoginInAdmin')
+data.setCell(13, 2, 'ims.LoginPage')
+data.setCell(13, 3, 6591);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 't2_SignupFromWidget')
+data.setCell(14, 2, 'ims.WidgetPage')
+data.setCell(14, 3, 6462);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 't5_LogoutFromAdmin')
+data.setCell(15, 2, 'ims.LoginPage')
+data.setCell(15, 3, 5158);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 't1_SelectTemplate')
+data.setCell(16, 2, 'my.so.ranks')
+data.setCell(16, 3, 4187);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 't4_CheckWidget')
+data.setCell(17, 2, 'ims.LoginPage')
+data.setCell(17, 3, 4147);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 't4_ChangePC')
+data.setCell(18, 2, 'my.so.revenue')
+data.setCell(18, 3, 3767);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 't1_AddNewSite')
+data.setCell(19, 2, 'my.so.addnewsite')
+data.setCell(19, 3, 3546);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 't3_CheckBlacklist')
+data.setCell(20, 2, 'my.so.filters')
+data.setCell(20, 3, 3487);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 't1_CheckConfigure')
+data.setCell(21, 2, 'my.so.style')
+data.setCell(21, 3, 3280);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 't1_SelectTemplate')
+data.setCell(22, 2, 'my.so.engtsRules')
+data.setCell(22, 3, 2989);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 't1_CheckModeration')
+data.setCell(23, 2, 'my.so.moderation')
+data.setCell(23, 3, 2939);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 't1_ChangeInfo')
+data.setCell(24, 2, 'my.so.general')
+data.setCell(24, 3, 2938);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 't1_ChangePH')
+data.setCell(25, 2, 'my.so.revenue')
+data.setCell(25, 3, 2857);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 't1_CheckRestrictedWords')
+data.setCell(26, 2, 'my.so.filters')
+data.setCell(26, 3, 2659);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 't2_AddRank')
+data.setCell(27, 2, 'my.so.ranks')
+data.setCell(27, 3, 2496);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 't3_CheckModtool')
+data.setCell(28, 2, 'ims.LoginPage')
+data.setCell(28, 3, 2118);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 't2_ChangeInfo')
+data.setCell(29, 2, 'my.so.profile')
+data.setCell(29, 3, 1899);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 't2_CheckIpDomainSocial')
+data.setCell(30, 2, 'my.so.filters')
+data.setCell(30, 3, 1686);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 't2_SendCustomTemplate')
+data.setCell(31, 2, 'my.so.engtsRules')
+data.setCell(31, 3, 1552);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 't3_CheckAdSpace')
+data.setCell(32, 2, 'my.so.style')
+data.setCell(32, 3, 1549);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 't4_CheckCommunityTab')
+data.setCell(33, 2, 'my.so.style')
+data.setCell(33, 3, 1492);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 't3_AddCustomRank')
+data.setCell(34, 2, 'my.so.ranks')
+data.setCell(34, 3, 1485);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 't2_CheckColors')
+data.setCell(35, 2, 'my.so.style')
+data.setCell(35, 3, 1415);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 't2_ChangeDHO')
+data.setCell(36, 2, 'my.so.revenue')
+data.setCell(36, 3, 1325);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 't5_CheckCommunityWidget')
+data.setCell(37, 2, 'my.so.style')
+data.setCell(37, 3, 1030);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 't3_ChangePHO')
+data.setCell(38, 2, 'my.so.revenue')
+data.setCell(38, 3, 673);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 't3_CheckInfo')
+data.setCell(39, 2, 'my.so.profile')
+data.setCell(39, 3, 434);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 't4_FindSite')
+data.setCell(40, 2, 'my.so.profile')
+data.setCell(40, 3, 338);
+window.suiteTableData['discussion']= { tableData: data, tableDiv: 'times-div-discussion'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-discussion">
+              </div> <!-- times-div-discussion -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for discussion</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">17 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ims.WidgetPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.engtsRules</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.style</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.ranks</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.revenue</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.addnewsite</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.general</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.moderation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">my.so.filters</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getDriver</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-discussion" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.profile</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">627 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t2_ChangeInfo</span>
+                <span class="method-start">18377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_CheckInfo</span>
+                <span class="method-start">20675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t4_FindSite</span>
+                <span class="method-start">21143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">t5_CheckComments</span>
+                <span class="method-start">21483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">t6_CheckPromoComments</span>
+                <span class="method-start">34461 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">43473 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.addnewsite</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">46631 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_AddNewSite</span>
+                <span class="method-start">50566 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">54113 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.general</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">57407 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_ChangeInfo</span>
+                <span class="method-start">61467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">64406 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.revenue</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">67696 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_ChangePH</span>
+                <span class="method-start">71164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_ChangeDHO</span>
+                <span class="method-start">74038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_ChangePHO</span>
+                <span class="method-start">75366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t4_ChangePC</span>
+                <span class="method-start">76046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">79814 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.style</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">83838 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_CheckConfigure</span>
+                <span class="method-start">87408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_CheckColors</span>
+                <span class="method-start">90722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_CheckAdSpace</span>
+                <span class="method-start">92139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t4_CheckCommunityTab</span>
+                <span class="method-start">93689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t5_CheckCommunityWidget</span>
+                <span class="method-start">95183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">96215 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.filters</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">105212 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_CheckRestrictedWords</span>
+                <span class="method-start">108660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_CheckIpDomainSocial</span>
+                <span class="method-start">111322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_CheckBlacklist</span>
+                <span class="method-start">113041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">116529 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.moderation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">119447 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_CheckModeration</span>
+                <span class="method-start">122930 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">t2_CheckAddModeration</span>
+                <span class="method-start">125870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">138655 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.engtsRules</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">141693 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_SelectTemplate</span>
+                <span class="method-start">145253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_SendCustomTemplate</span>
+                <span class="method-start">148244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">149810 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">my.so.ranks</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">152623 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_SelectTemplate</span>
+                <span class="method-start">156087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_AddRank</span>
+                <span class="method-start">160290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_AddCustomRank</span>
+                <span class="method-start">162804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">164290 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.SignupPage</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">167763 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">loginInAdmin</span>
+                <span class="method-start">167765 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_LoginInAdmin</span>
+                <span class="method-start">171071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_CheckPpac</span>
+                <span class="method-start">177689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t3_CheckModtool</span>
+                <span class="method-start">192101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t4_CheckWidget</span>
+                <span class="method-start">194220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t5_LogoutFromAdmin</span>
+                <span class="method-start">198391 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t6_LoginViaYahoo</span>
+                <span class="method-start">203569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t7_LoginViaFacebook</span>
+                <span class="method-start">216716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t9_LoginViaGoogle</span>
+                <span class="method-start">230860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutFromAdmin</span>
+                <span class="method-start">241783 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.SignupPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">addScreenAllure</span>
+                <span class="method-start">249330 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_SignupInAdmin</span>
+                <span class="method-start">249330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">deleteScreenAllure</span>
+                <span class="method-start">257522 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.WidgetPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">addScreenAllure</span>
+                <span class="method-start">257523 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_LoginViaSo</span>
+                <span class="method-start">257523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t2_SignupFromWidget</span>
+                <span class="method-start">265269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t4_LoginViaYahoo</span>
+                <span class="method-start">271732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">t5_LoginViaGoogle</span>
+                <span class="method-start">286902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">t6_LoginViaFacebook</span>
+                <span class="method-start">298696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">deleteScreenAllure</span>
+                <span class="method-start">311541 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">widget.headline</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getDriver</span>
+                <span class="method-start">311657 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">addScreenAllure</span>
+                <span class="method-start">311658 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">t1_LoginAndPost</span>
+                <span class="method-start">311659 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">deleteScreenAllure</span>
+                <span class="method-start">332365 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ims.LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">332369 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

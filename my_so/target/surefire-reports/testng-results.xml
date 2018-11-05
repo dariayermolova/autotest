@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="17" total="58" passed="37">
+  <reporter-output>
+  </reporter-output>
+  <suite name="discussion" duration-ms="331793" started-at="2018-10-30T12:28:56Z" finished-at="2018-10-30T12:34:28Z">
+    <groups>
+    </groups>
+    <test name="my.so" duration-ms="166608" started-at="2018-10-30T12:28:56Z" finished-at="2018-10-30T12:31:43Z">
+      <class name="my.so.engtsRules">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.engtsRules@1c9f0a20]" name="loginInAdmin" is-config="true" duration-ms="3560" started-at="2018-10-30T12:31:17Z" description="Login to Admin" finished-at="2018-10-30T12:31:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_SelectTemplate()[pri:0, instance:my.so.engtsRules@1c9f0a20]" name="t1_SelectTemplate" duration-ms="2989" started-at="2018-10-30T12:31:21Z" description="Select template" finished-at="2018-10-30T12:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_SelectTemplate -->
+        <test-method status="PASS" signature="t2_SendCustomTemplate()[pri:0, instance:my.so.engtsRules@1c9f0a20]" name="t2_SendCustomTemplate" duration-ms="1552" started-at="2018-10-30T12:31:24Z" description="Send custom template" finished-at="2018-10-30T12:31:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_SendCustomTemplate -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.engtsRules@1c9f0a20]" name="logoutFromAdmin" is-config="true" duration-ms="2813" started-at="2018-10-30T12:31:25Z" description="Logout from Admin" finished-at="2018-10-30T12:31:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.engtsRules -->
+      <class name="my.so.moderation">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.moderation@2488b073]" name="loginInAdmin" is-config="true" duration-ms="3483" started-at="2018-10-30T12:30:55Z" description="Login to Admin" finished-at="2018-10-30T12:30:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_CheckModeration()[pri:0, instance:my.so.moderation@2488b073]" name="t1_CheckModeration" duration-ms="2939" started-at="2018-10-30T12:30:58Z" description="Check Moderation" finished-at="2018-10-30T12:31:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_CheckModeration -->
+        <test-method status="FAIL" signature="t2_CheckAddModeration()[pri:0, instance:my.so.moderation@2488b073]" name="t2_CheckAddModeration" duration-ms="12759" started-at="2018-10-30T12:31:01Z" description="Check add moderator" finished-at="2018-10-30T12:31:14Z">
+          <exception class="com.codeborne.selenide.ex.ElementShould">
+            <message>
+              <![CDATA[Element should be visible {By.id: addModerator}
+Element: '<div aria-hidden="false" aria-labelledby="addModeratorLabel" class="modal hide fade allModalStyle modal-add-moderator in" id="addModerator" role="dialog" tabindex="-1">×
+Add a moderator
+Email
+May change site settings
+Send invite Cancel</div>']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element should be visible {By.id: addModerator}
+Element: '<div aria-hidden="false" aria-labelledby="addModeratorLabel" class="modal hide fade allModalStyle modal-add-moderator in" id="addModerator" role="dialog" tabindex="-1">×
+Add a moderator
+Email
+May change site settings
+Send invite Cancel</div>'
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902674061.2.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902674061.2.html
+Timeout: 8 s.
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+at com.codeborne.selenide.commands.Should.should(Should.java:35)
+at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy13.shouldBe(Unknown Source)
+at my.so.moderation.t2_CheckAddModeration(moderation.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementShould -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_CheckAddModeration -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.moderation@2488b073]" name="logoutFromAdmin" is-config="true" duration-ms="3038" started-at="2018-10-30T12:31:14Z" description="Logout from Admin" finished-at="2018-10-30T12:31:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.moderation -->
+      <class name="my.so.filters">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.filters@162be91c]" name="loginInAdmin" is-config="true" duration-ms="3448" started-at="2018-10-30T12:30:41Z" description="Login to Admin" finished-at="2018-10-30T12:30:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_CheckRestrictedWords()[pri:0, instance:my.so.filters@162be91c]" name="t1_CheckRestrictedWords" duration-ms="2659" started-at="2018-10-30T12:30:44Z" description="Check Restricted Words" finished-at="2018-10-30T12:30:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_CheckRestrictedWords -->
+        <test-method status="PASS" signature="t2_CheckIpDomainSocial()[pri:0, instance:my.so.filters@162be91c]" name="t2_CheckIpDomainSocial" duration-ms="1686" started-at="2018-10-30T12:30:47Z" description="Check ip, domain, social" finished-at="2018-10-30T12:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_CheckIpDomainSocial -->
+        <test-method status="PASS" signature="t3_CheckBlacklist()[pri:0, instance:my.so.filters@162be91c]" name="t3_CheckBlacklist" duration-ms="3487" started-at="2018-10-30T12:30:48Z" description="Check blacklist" finished-at="2018-10-30T12:30:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_CheckBlacklist -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.filters@162be91c]" name="logoutFromAdmin" is-config="true" duration-ms="2918" started-at="2018-10-30T12:30:52Z" description="Logout from Admin" finished-at="2018-10-30T12:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.filters -->
+      <class name="my.so.addnewsite">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.addnewsite@768ccdc5]" name="loginInAdmin" is-config="true" duration-ms="3935" started-at="2018-10-30T12:29:42Z" description="Login to Admin" finished-at="2018-10-30T12:29:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_AddNewSite()[pri:0, instance:my.so.addnewsite@768ccdc5]" name="t1_AddNewSite" duration-ms="3546" started-at="2018-10-30T12:29:46Z" description="Add new site" finished-at="2018-10-30T12:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_AddNewSite -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.addnewsite@768ccdc5]" name="logoutFromAdmin" is-config="true" duration-ms="3294" started-at="2018-10-30T12:29:50Z" description="Logout from Admin" finished-at="2018-10-30T12:29:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.addnewsite -->
+      <class name="my.so.style">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.style@659eef7]" name="loginInAdmin" is-config="true" duration-ms="3570" started-at="2018-10-30T12:30:19Z" description="Login to Admin" finished-at="2018-10-30T12:30:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_CheckConfigure()[pri:0, instance:my.so.style@659eef7]" name="t1_CheckConfigure" duration-ms="3280" started-at="2018-10-30T12:30:23Z" description="Check configure" finished-at="2018-10-30T12:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_CheckConfigure -->
+        <test-method status="PASS" signature="t2_CheckColors()[pri:0, instance:my.so.style@659eef7]" name="t2_CheckColors" duration-ms="1415" started-at="2018-10-30T12:30:26Z" description="Check colors" finished-at="2018-10-30T12:30:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_CheckColors -->
+        <test-method status="PASS" signature="t3_CheckAdSpace()[pri:0, instance:my.so.style@659eef7]" name="t3_CheckAdSpace" duration-ms="1549" started-at="2018-10-30T12:30:28Z" description="Check Ad space" finished-at="2018-10-30T12:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_CheckAdSpace -->
+        <test-method status="PASS" signature="t4_CheckCommunityTab()[pri:0, instance:my.so.style@659eef7]" name="t4_CheckCommunityTab" duration-ms="1492" started-at="2018-10-30T12:30:29Z" description="Check Community tab" finished-at="2018-10-30T12:30:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_CheckCommunityTab -->
+        <test-method status="PASS" signature="t5_CheckCommunityWidget()[pri:0, instance:my.so.style@659eef7]" name="t5_CheckCommunityWidget" duration-ms="1030" started-at="2018-10-30T12:30:31Z" description="Check Community widget" finished-at="2018-10-30T12:30:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t5_CheckCommunityWidget -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.style@659eef7]" name="logoutFromAdmin" is-config="true" duration-ms="8996" started-at="2018-10-30T12:30:32Z" description="Logout from Admin" finished-at="2018-10-30T12:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.style -->
+      <class name="my.so.ranks">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.ranks@55787112]" name="loginInAdmin" is-config="true" duration-ms="3464" started-at="2018-10-30T12:31:28Z" description="Login to Admin" finished-at="2018-10-30T12:31:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_SelectTemplate()[pri:0, instance:my.so.ranks@55787112]" name="t1_SelectTemplate" duration-ms="4187" started-at="2018-10-30T12:31:32Z" description="Select template" finished-at="2018-10-30T12:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_SelectTemplate -->
+        <test-method status="PASS" signature="t2_AddRank()[pri:0, instance:my.so.ranks@55787112]" name="t2_AddRank" duration-ms="2496" started-at="2018-10-30T12:31:36Z" description="Add rank" finished-at="2018-10-30T12:31:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_AddRank -->
+        <test-method status="PASS" signature="t3_AddCustomRank()[pri:0, instance:my.so.ranks@55787112]" name="t3_AddCustomRank" duration-ms="1485" started-at="2018-10-30T12:31:38Z" description="Add custom rank" finished-at="2018-10-30T12:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_AddCustomRank -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.ranks@55787112]" name="logoutFromAdmin" is-config="true" duration-ms="2890" started-at="2018-10-30T12:31:40Z" description="Logout from Admin" finished-at="2018-10-30T12:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.ranks -->
+      <class name="my.so.general">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.general@4c6daf0]" name="loginInAdmin" is-config="true" duration-ms="4060" started-at="2018-10-30T12:29:53Z" description="Login to Admin" finished-at="2018-10-30T12:29:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_ChangeInfo()[pri:0, instance:my.so.general@4c6daf0]" name="t1_ChangeInfo" duration-ms="2938" started-at="2018-10-30T12:29:57Z" description="Change general" finished-at="2018-10-30T12:30:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_ChangeInfo -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.general@4c6daf0]" name="logoutFromAdmin" is-config="true" duration-ms="3290" started-at="2018-10-30T12:30:00Z" description="Logout from Admin" finished-at="2018-10-30T12:30:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.general -->
+      <class name="my.so.revenue">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.revenue@10650953]" name="loginInAdmin" is-config="true" duration-ms="3468" started-at="2018-10-30T12:30:03Z" description="Login to Admin" finished-at="2018-10-30T12:30:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_ChangePH()[pri:0, instance:my.so.revenue@10650953]" name="t1_ChangePH" duration-ms="2857" started-at="2018-10-30T12:30:07Z" description="Change Promoted Headline" finished-at="2018-10-30T12:30:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_ChangePH -->
+        <test-method status="PASS" signature="t2_ChangeDHO()[pri:0, instance:my.so.revenue@10650953]" name="t2_ChangeDHO" duration-ms="1325" started-at="2018-10-30T12:30:09Z" description="Change Default Headline Options" finished-at="2018-10-30T12:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_ChangeDHO -->
+        <test-method status="PASS" signature="t3_ChangePHO()[pri:0, instance:my.so.revenue@10650953]" name="t3_ChangePHO" duration-ms="673" started-at="2018-10-30T12:30:11Z" description="Change Promoted Headlines Options" finished-at="2018-10-30T12:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_ChangePHO -->
+        <test-method status="PASS" signature="t4_ChangePC()[pri:0, instance:my.so.revenue@10650953]" name="t4_ChangePC" duration-ms="3767" started-at="2018-10-30T12:30:11Z" description="Change Promoted Comments" finished-at="2018-10-30T12:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_ChangePC -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.revenue@10650953]" name="logoutFromAdmin" is-config="true" duration-ms="4023" started-at="2018-10-30T12:30:15Z" description="Logout from Admin" finished-at="2018-10-30T12:30:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.revenue -->
+      <class name="my.so.profile">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:my.so.profile@1991f767]" name="loginInAdmin" is-config="true" duration-ms="17684" started-at="2018-10-30T12:28:56Z" description="Login to Admin" finished-at="2018-10-30T12:29:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t2_ChangeInfo()[pri:0, instance:my.so.profile@1991f767]" name="t2_ChangeInfo" duration-ms="1899" started-at="2018-10-30T12:29:14Z" description="Change user information" finished-at="2018-10-30T12:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_ChangeInfo -->
+        <test-method status="PASS" signature="t3_CheckInfo()[pri:0, instance:my.so.profile@1991f767]" name="t3_CheckInfo" duration-ms="434" started-at="2018-10-30T12:29:16Z" description="Check the changed information" finished-at="2018-10-30T12:29:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_CheckInfo -->
+        <test-method status="PASS" signature="t4_FindSite()[pri:0, instance:my.so.profile@1991f767]" name="t4_FindSite" duration-ms="338" started-at="2018-10-30T12:29:17Z" description="Find any site with user activity" finished-at="2018-10-30T12:29:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_FindSite -->
+        <test-method status="FAIL" signature="t5_CheckComments()[pri:0, instance:my.so.profile@1991f767]" name="t5_CheckComments" duration-ms="12830" started-at="2018-10-30T12:29:17Z" description="Check user&#039;s comments" finished-at="2018-10-30T12:29:30Z">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {By.className: goBack}
+Expected: visible]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {By.className: goBack}
+Expected: visible
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902568972.0.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902568972.0.html
+Timeout: 8 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"goBack"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:94)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+at com.codeborne.selenide.commands.Click.execute(Click.java:12)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at my.so.profile.t5_CheckComments(profile.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"class name","selector":"goBack"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=class name, value=goBack}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:68)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t5_CheckComments -->
+        <test-method status="FAIL" signature="t6_CheckPromoComments()[pri:0, instance:my.so.profile@1991f767]" name="t6_CheckPromoComments" duration-ms="9007" started-at="2018-10-30T12:29:30Z" description="Check user&#039;s promo comments" finished-at="2018-10-30T12:29:39Z">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {By.id: site-search}
+Expected: visible]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {By.id: site-search}
+Expected: visible
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902578493.1.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902578493.1.html
+Timeout: 8 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"site-search"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:94)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:32)
+at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:15)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy13.setValue(Unknown Source)
+at my.so.profile.t6_CheckPromoComments(profile.java:80)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"site-search"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=id, value=site-search}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:68)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t6_CheckPromoComments -->
+        <test-method status="PASS" signature="logoutFromAdmin()[pri:0, instance:my.so.profile@1991f767]" name="logoutFromAdmin" is-config="true" duration-ms="3156" started-at="2018-10-30T12:29:39Z" description="Logout from Admin" finished-at="2018-10-30T12:29:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- my.so.profile -->
+    </test> <!-- my.so -->
+    <test name="ims" duration-ms="143779" started-at="2018-10-30T12:31:43Z" finished-at="2018-10-30T12:34:07Z">
+      <class name="ims.SignupPage">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:ims.SignupPage@60bdf15d]" name="getDriver" is-config="true" duration-ms="1" started-at="2018-10-30T12:31:43Z" description="Open a browser" finished-at="2018-10-30T12:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="addScreenAllure()[pri:0, instance:ims.SignupPage@60bdf15d]" name="addScreenAllure" is-config="true" duration-ms="0" started-at="2018-10-30T12:33:05Z" finished-at="2018-10-30T12:33:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addScreenAllure -->
+        <test-method status="PASS" signature="t1_SignupInAdmin()[pri:0, instance:ims.SignupPage@60bdf15d]" name="t1_SignupInAdmin" duration-ms="8192" started-at="2018-10-30T12:33:05Z" description="Signup to my.so" finished-at="2018-10-30T12:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_SignupInAdmin -->
+        <test-method status="PASS" signature="deleteScreenAllure()[pri:0, instance:ims.SignupPage@60bdf15d]" name="deleteScreenAllure" is-config="true" duration-ms="1" started-at="2018-10-30T12:33:13Z" finished-at="2018-10-30T12:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScreenAllure -->
+      </class> <!-- ims.SignupPage -->
+      <class name="ims.WidgetPage">
+        <test-method status="PASS" signature="addScreenAllure()[pri:0, instance:ims.WidgetPage@47da3952]" name="addScreenAllure" is-config="true" duration-ms="0" started-at="2018-10-30T12:33:13Z" finished-at="2018-10-30T12:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addScreenAllure -->
+        <test-method status="PASS" signature="t1_LoginViaSo()[pri:0, instance:ims.WidgetPage@47da3952]" name="t1_LoginViaSo" duration-ms="7744" started-at="2018-10-30T12:33:13Z" description="Login to comment widget via so" finished-at="2018-10-30T12:33:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_LoginViaSo -->
+        <test-method status="PASS" signature="t2_SignupFromWidget()[pri:0, instance:ims.WidgetPage@47da3952]" name="t2_SignupFromWidget" duration-ms="6462" started-at="2018-10-30T12:33:21Z" description="Quick signup in the widget" finished-at="2018-10-30T12:33:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_SignupFromWidget -->
+        <test-method status="PASS" signature="t4_LoginViaYahoo()[pri:0, instance:ims.WidgetPage@47da3952]" name="t4_LoginViaYahoo" duration-ms="15128" started-at="2018-10-30T12:33:27Z" description="Login to widget via yahoo" finished-at="2018-10-30T12:33:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_LoginViaYahoo -->
+        <test-method status="PASS" signature="t5_LoginViaGoogle()[pri:0, instance:ims.WidgetPage@47da3952]" name="t5_LoginViaGoogle" duration-ms="11792" started-at="2018-10-30T12:33:42Z" description="Login to widget via google" finished-at="2018-10-30T12:33:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t5_LoginViaGoogle -->
+        <test-method status="FAIL" signature="t6_LoginViaFacebook()[pri:0, instance:ims.WidgetPage@47da3952]" name="t6_LoginViaFacebook" duration-ms="12819" started-at="2018-10-30T12:33:54Z" description="Login to widget via facebook" finished-at="2018-10-30T12:34:07Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+at io.qameta.allure.selenide.AllureSelenide.getScreenshotBytes(AllureSelenide.java:76)
+at io.qameta.allure.selenide.AllureSelenide.lambda$onEvent$2(AllureSelenide.java:58)
+at java.util.Optional.ifPresent(Optional.java:159)
+at io.qameta.allure.selenide.AllureSelenide.onEvent(AllureSelenide.java:48)
+at com.codeborne.selenide.logevents.SelenideLogger.commitStep(SelenideLogger.java:64)
+at com.codeborne.selenide.logevents.SelenideLogger.commitStep(SelenideLogger.java:56)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:71)
+at com.sun.proxy.$Proxy13.shouldHave(Unknown Source)
+at ims.WidgetPage.t6_LoginViaFacebook(WidgetPage.java:176)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t6_LoginViaFacebook -->
+        <test-method status="PASS" signature="deleteScreenAllure()[pri:0, instance:ims.WidgetPage@47da3952]" name="deleteScreenAllure" is-config="true" duration-ms="1" started-at="2018-10-30T12:34:07Z" finished-at="2018-10-30T12:34:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScreenAllure -->
+      </class> <!-- ims.WidgetPage -->
+      <class name="ims.LoginPage">
+        <test-method status="PASS" signature="loginInAdmin()[pri:0, instance:ims.LoginPage@5f59185e]" name="loginInAdmin" is-config="true" duration-ms="3305" started-at="2018-10-30T12:31:43Z" description="Login to Admin" finished-at="2018-10-30T12:31:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInAdmin -->
+        <test-method status="PASS" signature="t1_LoginInAdmin()[pri:0, instance:ims.LoginPage@5f59185e]" name="t1_LoginInAdmin" duration-ms="6591" started-at="2018-10-30T12:31:47Z" description="Login to my.so" finished-at="2018-10-30T12:31:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_LoginInAdmin -->
+        <test-method status="PASS" signature="t2_CheckPpac()[pri:0, instance:ims.LoginPage@5f59185e]" name="t2_CheckPpac" duration-ms="14400" started-at="2018-10-30T12:31:53Z" description="Check multilogin to ppac" finished-at="2018-10-30T12:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t2_CheckPpac -->
+        <test-method status="PASS" signature="t3_CheckModtool()[pri:0, instance:ims.LoginPage@5f59185e]" name="t3_CheckModtool" duration-ms="2118" started-at="2018-10-30T12:32:08Z" description="Check multilogin to modtool" finished-at="2018-10-30T12:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t3_CheckModtool -->
+        <test-method status="PASS" signature="t4_CheckWidget()[pri:0, instance:ims.LoginPage@5f59185e]" name="t4_CheckWidget" duration-ms="4147" started-at="2018-10-30T12:32:10Z" description="Check multilogin to widget" finished-at="2018-10-30T12:32:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t4_CheckWidget -->
+        <test-method status="PASS" signature="t5_LogoutFromAdmin()[pri:0, instance:ims.LoginPage@5f59185e]" name="t5_LogoutFromAdmin" duration-ms="5158" started-at="2018-10-30T12:32:14Z" description="Logout from my.so" finished-at="2018-10-30T12:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t5_LogoutFromAdmin -->
+        <test-method status="PASS" signature="t6_LoginViaYahoo()[pri:0, instance:ims.LoginPage@5f59185e]" name="t6_LoginViaYahoo" duration-ms="13146" started-at="2018-10-30T12:32:19Z" description="Login to my.so via yahoo" finished-at="2018-10-30T12:32:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t6_LoginViaYahoo -->
+        <test-method status="PASS" signature="t7_LoginViaFacebook()[pri:0, instance:ims.LoginPage@5f59185e]" name="t7_LoginViaFacebook" duration-ms="14118" started-at="2018-10-30T12:32:32Z" description="Login to my.so via facebook" finished-at="2018-10-30T12:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t7_LoginViaFacebook -->
+        <test-method status="PASS" signature="t9_LoginViaGoogle()[pri:0, instance:ims.LoginPage@5f59185e]" name="t9_LoginViaGoogle" duration-ms="10898" started-at="2018-10-30T12:32:46Z" description="Login to my.so via google" finished-at="2018-10-30T12:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t9_LoginViaGoogle -->
+        <test-method status="FAIL" signature="logoutFromAdmin()[pri:0, instance:ims.LoginPage@5f59185e]" name="logoutFromAdmin" is-config="true" duration-ms="7545" started-at="2018-10-30T12:32:57Z" description="Logout from Admin" finished-at="2018-10-30T12:33:05Z">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {By.xpath: //li[@id='tab-panel-comments-li']//a}
+Expected: text 'Your comments']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {By.xpath: //li[@id='tab-panel-comments-li']//a}
+Expected: text 'Your comments'
+Screenshot: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902784747.3.png
+Page source: file:/home/boss/IdeaProjects/my_so/build/reports/tests/1540902784747.3.html
+Timeout: 6 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='tab-panel-comments-li']//a"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:31)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:94)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:59)
+at com.codeborne.selenide.commands.Should.should(Should.java:35)
+at com.codeborne.selenide.commands.Should.execute(Should.java:29)
+at com.codeborne.selenide.commands.Should.execute(Should.java:12)
+at com.codeborne.selenide.commands.Commands.execute(Commands.java:145)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:90)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy13.shouldHave(Unknown Source)
+at my.so.suite.logoutFromAdmin(suite.java:63)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='tab-panel-comments-li']//a"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=xpath, value=//li[@id='tab-panel-comments-li']//a}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:29)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:68)
+at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:44)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAdmin -->
+      </class> <!-- ims.LoginPage -->
+    </test> <!-- ims -->
+    <test name="widget" duration-ms="20710" started-at="2018-10-30T12:34:07Z" finished-at="2018-10-30T12:34:28Z">
+      <class name="widget.headline">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:widget.headline@66629f63]" name="getDriver" is-config="true" duration-ms="0" started-at="2018-10-30T12:34:07Z" description="Open a browser" finished-at="2018-10-30T12:34:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="addScreenAllure()[pri:0, instance:widget.headline@66629f63]" name="addScreenAllure" is-config="true" duration-ms="0" started-at="2018-10-30T12:34:07Z" finished-at="2018-10-30T12:34:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addScreenAllure -->
+        <test-method status="PASS" signature="t1_LoginAndPost()[pri:0, instance:widget.headline@66629f63]" name="t1_LoginAndPost" duration-ms="20705" started-at="2018-10-30T12:34:07Z" description="Login to headline and post headline" finished-at="2018-10-30T12:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t1_LoginAndPost -->
+        <test-method status="PASS" signature="deleteScreenAllure()[pri:0, instance:widget.headline@66629f63]" name="deleteScreenAllure" is-config="true" duration-ms="0" started-at="2018-10-30T12:34:28Z" finished-at="2018-10-30T12:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteScreenAllure -->
+      </class> <!-- widget.headline -->
+      <class name="ims.LoginPage">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:ims.LoginPage@5f59185e]" name="getDriver" is-config="true" duration-ms="566" started-at="2018-10-30T12:28:55Z" description="Open a browser, add allure" finished-at="2018-10-30T12:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ims.LoginPage@5f59185e]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-10-30T12:34:28Z" description="Delete allure" finished-at="2018-10-30T12:34:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ims.LoginPage -->
+    </test> <!-- widget -->
+  </suite> <!-- discussion -->
+</testng-results>

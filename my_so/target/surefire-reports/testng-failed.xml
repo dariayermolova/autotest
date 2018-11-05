@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [discussion]">
+  <test thread-count="5" verbose="0" name="my.so(failed)">
+    <classes>
+      <class name="my.so.profile">
+        <methods>
+          <include name="getDriver"/>
+          <include name="t6_CheckPromoComments"/>
+          <include name="afterSuite"/>
+          <include name="loginInAdmin"/>
+          <include name="t5_CheckComments"/>
+          <include name="logoutFromAdmin"/>
+        </methods>
+      </class> <!-- my.so.profile -->
+      <class name="my.so.moderation">
+        <methods>
+          <include name="t2_CheckAddModeration"/>
+          <include name="getDriver"/>
+          <include name="afterSuite"/>
+          <include name="loginInAdmin"/>
+          <include name="logoutFromAdmin"/>
+        </methods>
+      </class> <!-- my.so.moderation -->
+    </classes>
+  </test> <!-- my.so(failed) -->
+  <test thread-count="5" verbose="0" name="ims(failed)">
+    <classes>
+      <class name="ims.WidgetPage">
+        <methods>
+          <include name="getDriver"/>
+          <include name="addScreenAllure"/>
+          <include name="deleteScreenAllure"/>
+          <include name="t6_LoginViaFacebook"/>
+        </methods>
+      </class> <!-- ims.WidgetPage -->
+    </classes>
+  </test> <!-- ims(failed) -->
+</suite> <!-- Failed suite [discussion] -->

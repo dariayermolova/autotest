@@ -1,1 +1,0 @@
-{"uuid":"8cae07b8-aaea-4c64-9f04-9ddf433c3715","name":"ims.WidgetPage","start":1538141233946,"stop":1538141248893,"children":["d1a3a1f8-7f24-4855-a2b4-0ce826fd204e"],"befores":[{"name":"Open a browser","status":"passed","stage":"finished","description":"Open a browser","start":1538141234032,"stop":1538141234058}]}

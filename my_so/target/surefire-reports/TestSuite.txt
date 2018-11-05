@@ -1,0 +1,83 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 334.955 s <<< FAILURE! - in TestSuite
+t5_CheckComments(my.so.profile)  Time elapsed: 13.002 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.className: goBack}
+Expected: visible
+	at my.so.profile.t5_CheckComments(profile.java:74)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"class name","selector":"goBack"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=class name, value=goBack}
+	at my.so.profile.t5_CheckComments(profile.java:74)
+
+t6_CheckPromoComments(my.so.profile)  Time elapsed: 8.984 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.id: site-search}
+Expected: visible
+	at my.so.profile.t6_CheckPromoComments(profile.java:80)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"site-search"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=id, value=site-search}
+	at my.so.profile.t6_CheckPromoComments(profile.java:80)
+
+t2_CheckAddModeration(my.so.moderation)  Time elapsed: 12.759 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementShould: 
+Element should be visible {By.id: addModerator}
+Element: '<div aria-hidden="false" aria-labelledby="addModeratorLabel" class="modal hide fade allModalStyle modal-add-moderator in" id="addModerator" role="dialog" tabindex="-1">×
+Add a moderator
+Email
+May change site settings
+Send invite Cancel</div>'
+	at my.so.moderation.t2_CheckAddModeration(moderation.java:50)
+
+logoutFromAdmin(ims.LoginPage)  Time elapsed: 18.47 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //li[@id='tab-panel-comments-li']//a}
+Expected: text 'Your comments'
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='tab-panel-comments-li']//a"}
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+*** Element info: {Using=xpath, value=//li[@id='tab-panel-comments-li']//a}
+
+t6_LoginViaFacebook(ims.WidgetPage)  Time elapsed: 12.821 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: headless chrome=69.0.3497.81)
+  (Driver info: chromedriver=70.0.3538.67 (9ab0cfab84ded083718d3a4ff830726efd38869f),platform=Linux 4.13.0-45-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DY', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.13.0-45-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.67 (9ab0cfab84ded..., userDataDir: /tmp/.com.google.Chrome.aUfonU}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46545}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.81, webStorageEnabled: true}
+Session ID: 34e8963c4413337f7a2b3324ec57f2dd
+	at ims.WidgetPage.t6_LoginViaFacebook(WidgetPage.java:176)
+
